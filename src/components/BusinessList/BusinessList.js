@@ -1,11 +1,11 @@
 import React from 'react';
-import BusinessList from './businessList.css';
-import Business from './business/business';
+import styles from './BusinessList.css';
+import Business from '../Business';
 
 class BusinessList extends React.Component{
   render(){
-    return
-      <div className ="BusinessList">
+    return (
+      <div className={styles.BusinessList}>
         <Business />
         <Business />
         <Business />
@@ -13,7 +13,8 @@ class BusinessList extends React.Component{
         <Business />
         <Business />
       </div>
+    );
   }
 }
 
-export default class BusinessList;
+export default BusinessList;
